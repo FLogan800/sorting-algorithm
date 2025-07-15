@@ -1,4 +1,4 @@
-use sorting_algorithms::selection_sort::sort;
+use sorting_algorithms::gnome_sort::sort;
 
 #[test]
 fn random_data() {

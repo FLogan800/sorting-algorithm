@@ -1,10 +1,10 @@
-use sorting_algorithms::bubble_sort;
+use sorting_algorithms::bubble_sort::sort;
 
 #[test]
 fn random_data() {
     let mut data = [5, 9, 2, 3, 1, 4, 8, 0, 7, 6];
 
-    bubble_sort::sort(&mut data);
+    sort(&mut data);
 
     assert_eq!(data, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 }
@@ -13,7 +13,7 @@ fn random_data() {
 fn reverse_data() {
     let mut data = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 
-    bubble_sort::sort(&mut data);
+    sort(&mut data);
 
     assert_eq!(data, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 }
@@ -22,7 +22,7 @@ fn reverse_data() {
 fn repeated_data() {
     let mut data = [3, 1, 0, 4, 4, 2, 1, 2, 3, 0];
 
-    bubble_sort::sort(&mut data);
+    sort(&mut data);
 
     assert_eq!(data, [0, 0, 1, 1, 2, 2, 3, 3, 4, 4]);
 }
@@ -31,7 +31,7 @@ fn repeated_data() {
 fn one_number() {
     let mut data = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
-    bubble_sort::sort(&mut data);
+    sort(&mut data);
 
     assert_eq!(data, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
 }
@@ -40,7 +40,7 @@ fn one_number() {
 fn empty_array() {
     let mut data: [i32; 0] = [];
 
-    bubble_sort::sort(&mut data);
+    sort(&mut data);
 
     assert_eq!(data, []);
 }
@@ -49,7 +49,7 @@ fn empty_array() {
 fn almost_sorted() {
     let mut data = [1, 0, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    bubble_sort::sort(&mut data);
+    sort(&mut data);
 
     assert_eq!(data, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 }
