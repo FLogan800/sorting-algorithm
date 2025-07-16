@@ -1,6 +1,6 @@
 use fastrand;
 
-pub fn sort<T: PartialOrd>(data: &mut [T]) {
+pub fn sort<T: Ord>(data: &mut [T]) {
     if data.len() > 1 {
         let pivot = partition(data);
 
@@ -9,7 +9,7 @@ pub fn sort<T: PartialOrd>(data: &mut [T]) {
     }
 }
 
-fn partition<T: PartialOrd>(data: &mut [T]) -> usize {
+fn partition<T: Ord>(data: &mut [T]) -> usize {
     let n = data.len();
     let pivot = fastrand::usize(0..data.len());
     data.swap(pivot, n - 1);

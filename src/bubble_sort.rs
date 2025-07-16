@@ -1,4 +1,4 @@
-pub fn sort<T: PartialOrd>(data: &mut [T]) {
+pub fn sort<T: Ord>(data: &mut [T]) {
     let len = data.len();
 
     for i in 0..len {
