@@ -1,5 +1,20 @@
 use fastrand;
 
+/// Sorts a data set using Quick Sort
+///
+/// # Examples
+///
+/// ```
+/// use sorting_algorithm::quick_sort;
+///
+/// fn main() {
+///     let mut data = [3, 1, 2, 5, 4];
+///     
+///     quick_sort::sort(&mut data);
+///
+///     assert_eq!(data, [1, 2, 3, 4, 5]);
+/// }
+/// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
     if data.len() > 1 {
         let pivot = partition(data);

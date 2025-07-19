@@ -1,3 +1,20 @@
+/// Sorts a data set using Bubble Sort
+///
+/// Average time complexity: O(n<sup>2</sup>)
+///
+/// # Examples
+///
+/// ```
+/// use sorting_algorithm::bubble_sort;
+///
+/// fn main() {
+///     let mut data = [3, 1, 2, 5, 4];
+///     
+///     bubble_sort::sort(&mut data);
+///
+///     assert_eq!(data, [1, 2, 3, 4, 5]);
+/// }
+/// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
     let len = data.len();
 

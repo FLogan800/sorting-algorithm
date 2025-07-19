@@ -1,3 +1,20 @@
+/// Sorts a data set using Shell Sort
+///
+/// Average time complexity: O(n<sup>2</sup>)
+///
+/// # Examples
+///
+/// ```
+/// use sorting_algorithm::shell_sort;
+///
+/// fn main() {
+///     let mut data = [3, 1, 2, 5, 4];
+///     
+///     shell_sort::sort(&mut data);
+///
+///     assert_eq!(data, [1, 2, 3, 4, 5]);
+/// }
+/// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
     let n = data.len();
 
