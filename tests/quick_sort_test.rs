@@ -1,4 +1,4 @@
-use sorting_algorithms::quick_sort::sort;
+use sorting_algorithm::quick_sort::sort;
 
 #[test]
 fn random_data() {

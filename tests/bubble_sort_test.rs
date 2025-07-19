@@ -1,4 +1,4 @@
-use sorting_algorithms::bubble_sort::sort;
+use sorting_algorithm::bubble_sort::sort;
 
 #[test]
 fn random_data() {

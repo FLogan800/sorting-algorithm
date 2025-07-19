@@ -1,4 +1,4 @@
-use sorting_algorithms::insertion_sort::sort;
+use sorting_algorithm::insertion_sort::sort;
 
 #[test]
 fn random_data() {

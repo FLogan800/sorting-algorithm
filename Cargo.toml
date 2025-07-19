@@ -1,5 +1,5 @@
 [package]
-name = "sorting-algorithms"
+name = "sorting-algorithm"
 description = "An implementation of various sorting algorithms"
 version = "0.1.7"
 edition = "2024"

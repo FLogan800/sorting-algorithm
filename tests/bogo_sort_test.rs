@@ -1,4 +1,4 @@
-use sorting_algorithms::bogo_sort::sort;
+use sorting_algorithm::bogo_sort::sort;
 
 #[test]
 fn random_data() {
