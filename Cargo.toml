@@ -1,7 +1,9 @@
 [package]
 name = "sorting-algorithms"
+description = "An implementation of various sorting algorithms"
 version = "0.1.7"
 edition = "2024"
+license = "MIT License"
 
 [dependencies]
 fastrand = "2.3.0"
