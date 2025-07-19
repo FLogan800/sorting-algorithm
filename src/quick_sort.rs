@@ -2,6 +2,8 @@ use fastrand;
 
 /// Sorts a data set using Quick Sort
 ///
+/// Average time complexity: O(n logn)
+///
 /// # Examples
 ///
 /// ```

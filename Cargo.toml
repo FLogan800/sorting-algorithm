@@ -1,9 +1,10 @@
 [package]
 name = "sorting-algorithm"
 description = "An implementation of various sorting algorithms"
-version = "0.1.8"
+version = "0.1.9"
 edition = "2024"
 license = "MIT"
+repository = "https://github.com/FLogan800/sorting-algorithm"
 
 [dependencies]
 fastrand = "2.3.0"
