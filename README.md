@@ -7,6 +7,7 @@ The current implemented sorting algorithms are:
 - Bogo Sort
 - Bubble Sort
 - Cocktail Shaker Sort
+- Comb Sort
 - Gnome Sort
 - Insertion Sort
 - Quick Sort
