@@ -4,7 +4,7 @@
 ///
 /// # Examples
 ///
-/// ```Rust
+/// ```
 /// use sorting_algorithm::cocktail_shaker_sort;
 ///
 /// fn main() {
