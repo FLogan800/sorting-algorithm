@@ -1,6 +1,6 @@
 /// Sorts a data set using Merge Sort
 ///
-/// Average time complexity: O(n*n!)
+/// Average time complexity: O(n logn)
 ///
 /// # Examples
 ///
