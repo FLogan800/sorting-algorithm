@@ -16,6 +16,10 @@
 /// }
 /// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
+    if data.len() <= 1 {
+        return;
+    }
+
     for i in 1..data.len() {
         let mut j = i;
 

@@ -16,12 +16,16 @@
 /// }
 /// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
-    let len = data.len();
+    if data.len() <= 1 {
+        return;
+    }
 
-    for i in 0..len {
+    let n = data.len();
+
+    for i in 0..n {
         let mut swapped = false;
 
-        for j in 0..(len - i - 1) {
+        for j in 0..(n - i - 1) {
             if data[j] > data[j + 1] {
                 data.swap(j, j + 1);
                 swapped = true;

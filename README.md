@@ -10,6 +10,7 @@ The current implemented sorting algorithms are:
 - Comb Sort
 - Gnome Sort
 - Insertion Sort
+- Merge Sort
 - Quick Sort
 - Selection Sort
 - Shell Sort

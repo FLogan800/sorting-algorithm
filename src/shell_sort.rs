@@ -16,6 +16,10 @@
 /// }
 /// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
+    if data.len() <= 1 {
+        return;
+    }
+
     let n = data.len();
 
     let mut gap = n / 2;

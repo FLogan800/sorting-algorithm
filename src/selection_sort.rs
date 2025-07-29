@@ -16,12 +16,16 @@
 /// }
 /// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
-    let len = data.len();
+    if data.len() <= 1 {
+        return;
+    }
 
-    for i in 0..len {
+    let n = data.len();
+
+    for i in 0..n {
         let mut min_index = i;
 
-        for j in i + 1..len {
+        for j in i + 1..n {
             if data[j] < data[min_index] {
                 min_index = j;
             }

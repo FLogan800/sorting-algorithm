@@ -16,11 +16,15 @@
 /// }
 /// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
-    let len = data.len();
+    if data.len() <= 1 {
+        return;
+    }
+
+    let n = data.len();
 
     let mut i = 0;
 
-    while i < len {
+    while i < n {
         if i == 0 {
             i += 1;
         }

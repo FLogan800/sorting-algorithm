@@ -16,7 +16,7 @@
 /// }
 /// ```
 pub fn sort<T: Ord>(data: &mut [T]) {
-    if data.is_empty() {
+    if data.len() <= 1 {
         return;
     }
 
