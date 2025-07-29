@@ -1,6 +1,6 @@
 /// Sorts a data set using Insertion Sort
 ///
-/// Average time complexity: O(n<sup>2<sup>)
+/// Average time complexity: O(n<sup>2</sup>)
 ///
 /// # Examples
 ///
