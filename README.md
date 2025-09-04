@@ -9,6 +9,7 @@ The current implemented sorting algorithms are:
 - Cocktail Shaker Sort
 - Comb Sort
 - Gnome Sort
+- Heap Sort
 - Insertion Sort
 - Merge Sort
 - Quick Sort
