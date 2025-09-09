@@ -9,3 +9,4 @@ pub mod merge_sort;
 pub mod quick_sort;
 pub mod selection_sort;
 pub mod shell_sort;
+pub mod tim_sort;

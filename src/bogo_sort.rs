@@ -4,7 +4,7 @@ use fastrand;
 ///
 /// Average time complexity: O(n*n!)
 ///
-/// # Examples
+/// # Example
 ///
 /// ```
 /// use sorting_algorithm::bogo_sort;

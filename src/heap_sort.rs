@@ -2,7 +2,7 @@
 ///
 /// Average time complexity: O(n logn)
 ///
-/// # Examples
+/// # Example
 ///
 /// ```
 /// use sorting_algorithm::heap_sort;

@@ -2,7 +2,7 @@
 ///
 /// Average time complexity: O(n<sup>2</sup>)
 ///
-/// # Examples
+/// # Example
 ///
 /// ```
 /// use sorting_algorithm::gnome_sort;
