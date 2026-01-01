@@ -8,6 +8,7 @@ The current implemented sorting algorithms are:
 - Bubble Sort
 - Cocktail Shaker Sort
 - Comb Sort
+- Exchange Sort
 - Gnome Sort
 - Heap Sort
 - Insertion Sort
@@ -18,7 +19,7 @@ The current implemented sorting algorithms are:
 
 ## Use
 
-The use for each algorithm is essentially the same.
+The use for each algorithm is the same.
 
 1. Import the module for the desired algorithm
 2. Call the module's `sort()` function
