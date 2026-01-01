@@ -1,44 +1,51 @@
 use sorting_algorithm::comb_sort::sort;
+use fastrand;
 
 #[test]
-fn random_data() {
-    let mut data = [5, 9, 2, 3, 1, 4, 8, 0, 7, 6];
+fn test_random_data() {
+    for n in [1, 10, 100, 1_000] { 
+        let mut data: Vec<u32> = (0..n as u32).collect();
+        fastrand::shuffle(&mut data);
 
-    sort(&mut data);
+        let mut expected = data.clone();
+        expected.sort();
 
-    assert_eq!(data, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+        sort(&mut data);
+
+        assert_eq!(data, expected);
+    }
 }
 
 #[test]
-fn reverse_data() {
-    let mut data = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+fn test_sorted_data() {
+    for n in [1, 10, 100, 1_000] {
+        let mut data: Vec<u32> = (0..n).collect();
 
-    sort(&mut data);
+        let expected = data.clone();
 
-    assert_eq!(data, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+        sort(&mut data);
+
+        assert_eq!(data, expected);
+    }
 }
 
 #[test]
-fn repeated_data() {
-    let mut data = [3, 1, 0, 4, 4, 2, 1, 2, 3, 0];
+fn test_reversed_data() {
+    for n in [1, 10, 100, 1_000] {
+        let mut data: Vec<u32> = (0..n).rev().collect();
 
-    sort(&mut data);
+        let mut expected = data.clone();
+        expected.sort();
 
-    assert_eq!(data, [0, 0, 1, 1, 2, 2, 3, 3, 4, 4]);
+        sort(&mut data);
+
+        assert_eq!(data, expected);
+    }
 }
 
 #[test]
-fn one_number() {
-    let mut data = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-
-    sort(&mut data);
-
-    assert_eq!(data, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
-}
-
-#[test]
-fn empty_array() {
-    let mut data: [i32; 0] = [];
+fn test_empty_data() {
+    let mut data: [u32; 0] = [];
 
     sort(&mut data);
 
@@ -46,10 +53,19 @@ fn empty_array() {
 }
 
 #[test]
-fn almost_sorted() {
-    let mut data = [1, 0, 2, 3, 4, 5, 6, 7, 8, 9];
+fn test_repeated_number() {
+    for n in [1, 10, 100, 1_000] {
+        let mut data: Vec<u32> = Vec::new();
 
-    sort(&mut data);
+        for _ in 0..n {
+            data.push(0);
+        }
 
-    assert_eq!(data, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+        let mut expected = data.clone();
+        expected.sort();
+
+        sort(&mut data);
+
+        assert_eq!(data, expected);
+    }
 }
