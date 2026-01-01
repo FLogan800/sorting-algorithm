@@ -2,6 +2,7 @@ pub mod bogo_sort;
 pub mod bubble_sort;
 pub mod cocktail_shaker_sort;
 pub mod comb_sort;
+pub mod exchange_sort;
 pub mod gnome_sort;
 pub mod heap_sort;
 pub mod insertion_sort;
